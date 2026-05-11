@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -62,7 +67,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    main { padding: 1.5rem; }
+    
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
@@ -86,7 +91,7 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
     border-left: 2px solid transparent;
 }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .home {
     display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
     font-size: .85rem; font-weight: 600;
@@ -96,10 +101,10 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
 h1, h2, h3, h4 { font-family: var(--font-h); }
 .cta .contacto-line a { color: white; text-decoration: underline; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    .content-area { flex-direction: column; }
+    
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
 a { color: var(--primary); text-decoration: none; }
-    .container { padding: 1rem; }
+    
 th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
 :root {
     --primary: #171717;
@@ -129,7 +134,9 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
 details[open] summary::before { content: '− '; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 footer a { color: rgba(255,255,255,0.85); }
-.sidebar .cat-name:hover { color: #c9a961; }</style>
+.sidebar .cat-name:hover { color: #c9a961; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"isPartOf":{"@type":"WebSite","url":"https://visalia.geotechnicalengineering1.com","@id":"https://visalia.geotechnicalengineering1.com/#website"},"url":"https://visalia.geotechnicalengineering1.com/road-geotechnics/","@type":"WebPage","name":"Roadway in Visalia – USA","@id":"https://visalia.geotechnicalengineering1.com/road-geotechnics/","inLanguage":"en","description":"Roadway engineering in Visalia demands designs that respect the San Joaquin Valley’s alluvial soils and high groundwater, where expansive clays and variabl"},{"@type":"BreadcrumbList","itemListElement":[{"name":"Home","@type":"ListItem","position":1,"item":"https://visalia.geotechnicalengineering1.com/"},{"name":"Roadway","@type":"ListItem","position":2,"item":"https://visalia.geotechnicalengineering1.com/road-geotechnics/"}]},{"@type":"ItemList","name":"Roadway","itemListElement":[{"name":"CBR study for road design","@type":"ListItem","position":1,"url":"https://visalia.geotechnicalengineering1.com/cbr-road/"},{"name":"Flexible pavement design","@type":"ListItem","position":2,"url":"https://visalia.geotechnicalengineering1.com/flexible-pavement/"},{"name":"Rigid pavement design","@type":"ListItem","position":3,"url":"https://visalia.geotechnicalengineering1.com/rigid-pavement/"}]}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#374151"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -175,6 +182,8 @@ footer a { color: rgba(255,255,255,0.85); }
 
             <section>
                 <h2>Local geotechnical conditions in Visalia</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>At 331 feet above sea level, Visalia sits on the distal portion of the Kings River alluvial fan, where a 7.1-magnitude rupture on a previously unrecognized blind thrust would produce peak ground accelerations near 0.42g according to the USGS’s 2023 NSHM update. For a permanent tieback wall restraining 25 feet of cut, that level of shaking imposes a dynamic increment on the anchor load that many legacy designs in the Central Valley never considered. We run site-specific response spectra through PLAXIS 2D to quantify the seismic demand on each anchor level, and we specify unbonded lengths that extend well past the critical failure surface defined by the FHWA’s apparent earth pressure envelope. In Visalia’s layered profile, the highest risk is not anchor rupture but a progressive loss of lock-off load as the grout-ground interface degrades under cyclic shear, which is why we insist on lift-off testing at six-month intervals for critical retaining structures.</p>
             </section>
 
@@ -198,7 +207,14 @@ footer a { color: rgba(255,255,255,0.85); }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../cbr-road/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">CBR study for road design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../flexible-pavement/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Flexible pavement design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../rigid-pavement/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Rigid pavement design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/ensayo-cbr-2.webp" alt="Roadway in Visalia" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Roadway design in Visalia requires a thorough understanding of local subsurface conditions shaped by alluvial deposits from the Sierra Nevada and the Kaweah River basin. Our geotechnical <a href="/investigation/">investigation</a> services address the variable stratigraphy of sandy loams, silts, and clay lenses that directly influence pavement performance, subgrade stability, and drainage behavior. Compliance with Caltrans Standard Specifications, AASHTO guidelines, and Tulare County requirements governs every phase of our work, from initial sampling to final bearing capacity recommendations. By integrating regional geologic hazard awareness—including liquefaction potential and expansive soil zones—we deliver pavement designs that withstand the Central Valley’s seasonal moisture fluctuations and heavy agricultural traffic loads.</p>
+<p>Our field methodology relies on standardized in-situ testing to quantify subgrade strength and compaction characteristics with precision. We deploy <a href="/cpt-test/">Cone Penetration Testing (CPT)</a> for continuous profiling of soil behavior type, tip resistance, and sleeve friction, which proves invaluable for identifying weak layers beneath proposed alignments. Complementary <a href="/lab-in-situ/">in-situ testing</a> includes the <a href="/sand-cone-density/">sand cone density method</a> to verify field compaction against ASTM D1556, ensuring compliance with relative compaction thresholds specified for roadway embankments. All procedures follow ASTM International standards, with laboratory confirmation of moisture-density relationships per ASTM D698 or D1557, delivering the parameters needed for mechanistic-empirical pavement design.</p>
+<p>Visalia’s roadway projects span arterial expansions, residential subdivision streets, and rehabilitation of aging corridors subjected to rutting and alligator cracking. We frequently support reconstruction of collectors near the industrial districts where truck traffic demands robust subgrade treatment, often involving lime or cement stabilization of high-plasticity clays verified through <a href="/atterberg-limits/">Atterberg limits</a> testing. New alignments crossing former agricultural land require careful evaluation of fill settlement and groundwater proximity, addressed through consolidation testing and <a href="/grain-size/">grain size analysis</a> combining sieve and hydrometer methods per ASTM D422 and D7928. Our foundation recommendations for retaining walls, box culverts, and signal pole footings draw on the same comprehensive data set, ensuring consistent geotechnical logic across all structural elements within the right-of-way.</p>
+<img src="/img/pavimento-flexible-1.webp" alt="Roadway in Visalia" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>A typical roadway investigation moves from site reconnaissance and utility clearance through drilling, sampling, and laboratory classification, concluding with a geotechnical report containing pavement design curves, subgrade resilient modulus estimates, and construction recommendations. Clients receive clear deliverables: boring logs, CPT profiles, laboratory test results, and a site-specific pavement structural section per Caltrans Highway Design Manual procedures. This integrated approach—merging <a href="/laboratory/">laboratory</a> testing with field verification—reduces change order risk and extends pavement service life. For Visalia’s engineers and contractors, our single-source geotechnical support means faster submittal approvals and pavements engineered for local soils, not generic assumptions.</p></div></section></main>
     </div>
 </div>
 

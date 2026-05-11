@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -62,7 +67,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    main { padding: 1.5rem; }
+    
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
@@ -86,7 +91,7 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
     border-left: 2px solid transparent;
 }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .home {
     display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
     font-size: .85rem; font-weight: 600;
@@ -96,10 +101,10 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
 h1, h2, h3, h4 { font-family: var(--font-h); }
 .cta .contacto-line a { color: white; text-decoration: underline; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    .content-area { flex-direction: column; }
+    
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
 a { color: var(--primary); text-decoration: none; }
-    .container { padding: 1rem; }
+    
 th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
 :root {
     --primary: #171717;
@@ -129,7 +134,9 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
 details[open] summary::before { content: '− '; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 footer a { color: rgba(255,255,255,0.85); }
-.sidebar .cat-name:hover { color: #c9a961; }</style>
+.sidebar .cat-name:hover { color: #c9a961; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"isPartOf":{"@type":"WebSite","url":"https://visalia.geotechnicalengineering1.com","@id":"https://visalia.geotechnicalengineering1.com/#website"},"url":"https://visalia.geotechnicalengineering1.com/lab-in-situ/","@type":"WebPage","name":"In-Situ Testing in Visalia – USA","@id":"https://visalia.geotechnicalengineering1.com/lab-in-situ/","inLanguage":"en","description":"In-situ testing in Visalia provides direct evaluation of subsurface conditions without removing samples from the ground, essential given the region’s alluv"},{"@type":"BreadcrumbList","itemListElement":[{"name":"Home","@type":"ListItem","position":1,"item":"https://visalia.geotechnicalengineering1.com/"},{"name":"In-Situ Testing","@type":"ListItem","position":2,"item":"https://visalia.geotechnicalengineering1.com/lab-in-situ/"}]},{"@type":"ItemList","name":"In-Situ Testing","itemListElement":[{"name":"Field density test (sand cone method)","@type":"ListItem","position":1,"url":"https://visalia.geotechnicalengineering1.com/sand-cone-density/"}]}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#374151"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -175,6 +182,8 @@ footer a { color: rgba(255,255,255,0.85); }
 
             <section>
                 <h2>Local geotechnical conditions in Visalia</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>At 331 feet above sea level, Visalia sits on the distal portion of the Kings River alluvial fan, where a 7.1-magnitude rupture on a previously unrecognized blind thrust would produce peak ground accelerations near 0.42g according to the USGS’s 2023 NSHM update. For a permanent tieback wall restraining 25 feet of cut, that level of shaking imposes a dynamic increment on the anchor load that many legacy designs in the Central Valley never considered. We run site-specific response spectra through PLAXIS 2D to quantify the seismic demand on each anchor level, and we specify unbonded lengths that extend well past the critical failure surface defined by the FHWA’s apparent earth pressure envelope. In Visalia’s layered profile, the highest risk is not anchor rupture but a progressive loss of lock-off load as the grout-ground interface degrades under cyclic shear, which is why we insist on lift-off testing at six-month intervals for critical retaining structures.</p>
             </section>
 
@@ -198,7 +207,14 @@ footer a { color: rgba(255,255,255,0.85); }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../sand-cone-density/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Field density test (sand cone method)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/permeabilidad-campo-5.webp" alt="In-Situ Testing in Visalia" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>In-situ testing in Visalia provides direct measurement of soil and groundwater conditions without removing samples from the ground, delivering critical data for geotechnical design across California's Central Valley. The region's subsurface is shaped by alluvial deposits from the Kaweah River watershed, creating interbedded sequences of sands, silts, and clays that demand precise characterization. Local projects must comply with the 2022 California Building Code (CBC), which adopts IBC Chapter 18 with state-specific amendments, alongside Caltrans standards for transportation work and city of Visalia grading ordinance requirements. A comprehensive <a href="/investigation/">geotechnical investigation</a> typically combines in-situ methods with <a href="/laboratory/">laboratory testing</a> to calibrate results and validate engineering parameters for foundation design.</p>
+<p>Standard penetration testing (SPT) per ASTM D1586 remains the most widely used in-situ method, providing disturbed samples and N-values for empirical correlations. Cone penetration testing (CPT) has gained significant adoption following ASTM D5778, offering continuous profiling of tip resistance, sleeve friction, and pore pressure without borehole disturbance. Our <a href="/cpt-test/">CPT testing</a> delivers high-resolution stratigraphy particularly valuable in Visalia's liquefiable alluvial sands, where seismic evaluations per CBC Section 1803.5 are mandatory. Field density verification employs nuclear methods (ASTM D6938) and the <a href="/sand-cone-density/">sand cone density test</a> (ASTM D1556) for compaction quality assurance on structural fill and pavement subgrades. These methods integrate with <a href="/grain-size/">grain size analysis</a> to correlate in-situ behavior with soil classification.</p>
+<p>Visalia's expanding residential subdivisions, commercial developments along Mooney Boulevard, and industrial facilities near State Route 99 all depend on in-situ data for foundation decisions. Shallow groundwater at depths of 10 to 30 feet in many areas necessitates CPT pore pressure dissipation tests to estimate consolidation rates for footings and slabs-on-grade. Agricultural processing facilities with heavy tank loads require in-situ shear wave velocity measurements for dynamic analysis. Our <a href="/foundations/">foundations</a> group uses this data to optimize shallow footing dimensions or determine when deep foundations become necessary, directly impacting construction costs and schedule reliability for Visalia projects.</p>
+<img src="/img/permeabilidad-campo-5.webp" alt="In-Situ Testing in Visalia" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>Every in-situ program begins with a site-specific testing plan aligned with the project's geotechnical complexity and structural demands. Field crews mobilize truck-mounted CPT rigs or drill rigs with automatic hammers, recording data through calibrated digital acquisition systems. Deliverables include boring logs with SPT N-values and soil descriptions, CPT plots with soil behavior type classification, groundwater monitoring data, and a geotechnical report containing bearing capacity calculations, settlement estimates, and seismic site class determination per ASCE 7-22. This integrated approach, combining multiple in-situ techniques with targeted <a href="/atterberg-limits/">Atterberg limits</a> testing, provides Visalia developers and contractors with defensible design parameters that reduce uncertainty and prevent costly over-excavation or foundation remediation.</p></div></section></main>
     </div>
 </div>
 

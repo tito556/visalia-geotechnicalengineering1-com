@@ -25,6 +25,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -65,7 +70,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    main { padding: 1.5rem; }
+    
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
@@ -89,7 +94,7 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
     border-left: 2px solid transparent;
 }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .home {
     display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
     font-size: .85rem; font-weight: 600;
@@ -99,10 +104,10 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
 h1, h2, h3, h4 { font-family: var(--font-h); }
 .cta .contacto-line a { color: white; text-decoration: underline; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    .content-area { flex-direction: column; }
+    
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
 a { color: var(--primary); text-decoration: none; }
-    .container { padding: 1rem; }
+    
 th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
 :root {
     --primary: #171717;
@@ -132,7 +137,9 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
 details[open] summary::before { content: '− '; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 footer a { color: rgba(255,255,255,0.85); }
-.sidebar .cat-name:hover { color: #c9a961; }</style>
+.sidebar .cat-name:hover { color: #c9a961; }
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#374151"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -195,6 +202,8 @@ footer a { color: rgba(255,255,255,0.85); }
 
             <section>
                 <h2>Our services</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Our resistivity services for Visalia projects cover everything from preliminary site screening to forensic investigations of existing structures.</p>
                 <style>.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicios-grid a.servicio-link:hover{border-color:#171717;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover h3{color:#171717}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#171717;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}</style><div class="servicios-grid"><div class="servicio"><h3>1D Vertical Electrical Sounding (VES)</h3><p>Point soundings that recover resistivity versus depth, ideal for groundwater table mapping, aggregate prospecting, and estimating soil corrosivity. We run Schlumberger arrays with expanding electrode spacing and invert each sounding to a layered earth model.</p></div><div class="servicio"><h3>2D/3D Electrical Resistivity Tomography (ERT)</h3><p>Multi-electrode surveys along transects, producing continuous cross-sections that reveal channel geometries, fault zones, and perched water bodies. We use 56-electrode spreads as standard, with roll-along capability for lines exceeding 2,000 linear feet.</p></div></div>
             </section>

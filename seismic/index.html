@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -62,7 +67,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    main { padding: 1.5rem; }
+    
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
@@ -86,7 +91,7 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
     border-left: 2px solid transparent;
 }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .home {
     display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
     font-size: .85rem; font-weight: 600;
@@ -96,10 +101,10 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
 h1, h2, h3, h4 { font-family: var(--font-h); }
 .cta .contacto-line a { color: white; text-decoration: underline; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    .content-area { flex-direction: column; }
+    
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
 a { color: var(--primary); text-decoration: none; }
-    .container { padding: 1rem; }
+    
 th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
 :root {
     --primary: #171717;
@@ -129,7 +134,9 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
 details[open] summary::before { content: '− '; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 footer a { color: rgba(255,255,255,0.85); }
-.sidebar .cat-name:hover { color: #c9a961; }</style>
+.sidebar .cat-name:hover { color: #c9a961; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"isPartOf":{"@type":"WebSite","url":"https://visalia.geotechnicalengineering1.com","@id":"https://visalia.geotechnicalengineering1.com/#website"},"url":"https://visalia.geotechnicalengineering1.com/seismic/","@type":"WebPage","name":"Seismic in Visalia – USA","@id":"https://visalia.geotechnicalengineering1.com/seismic/","inLanguage":"en","description":"In Visalia’s seismically active southern Central Valley setting, our seismic category addresses site response, ground motion hazards, and foundation perfor"},{"@type":"BreadcrumbList","itemListElement":[{"name":"Home","@type":"ListItem","position":1,"item":"https://visalia.geotechnicalengineering1.com/"},{"name":"Seismic","@type":"ListItem","position":2,"item":"https://visalia.geotechnicalengineering1.com/seismic/"}]},{"@type":"ItemList","name":"Seismic","itemListElement":[{"name":"Base isolation seismic design","@type":"ListItem","position":1,"url":"https://visalia.geotechnicalengineering1.com/seismic-isolation/"},{"name":"Seismic microzonation","@type":"ListItem","position":2,"url":"https://visalia.geotechnicalengineering1.com/seismic-microzonation/"},{"name":"Soil liquefaction analysis","@type":"ListItem","position":3,"url":"https://visalia.geotechnicalengineering1.com/liquefaction/"}]}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#374151"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -174,6 +181,8 @@ footer a { color: rgba(255,255,255,0.85); }
 
             <section>
                 <h2>Local geotechnical conditions in Visalia</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>At 331 feet above sea level, Visalia sits on the distal portion of the Kings River alluvial fan, where a 7.1-magnitude rupture on a previously unrecognized blind thrust would produce peak ground accelerations near 0.42g according to the USGS’s 2023 NSHM update. For a permanent tieback wall restraining 25 feet of cut, that level of shaking imposes a dynamic increment on the anchor load that many legacy designs in the Central Valley never considered. We run site-specific response spectra through PLAXIS 2D to quantify the seismic demand on each anchor level, and we specify unbonded lengths that extend well past the critical failure surface defined by the FHWA’s apparent earth pressure envelope. In Visalia’s layered profile, the highest risk is not anchor rupture but a progressive loss of lock-off load as the grout-ground interface degrades under cyclic shear, which is why we insist on lift-off testing at six-month intervals for critical retaining structures.</p>
             </section>
 
@@ -197,7 +206,14 @@ footer a { color: rgba(255,255,255,0.85); }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../seismic-isolation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Base isolation seismic design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../seismic-microzonation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Seismic microzonation</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../liquefaction/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Soil liquefaction analysis</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/microzonificacion-sismica-1.webp" alt="Seismic in Visalia" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Seismic engineering in Visalia demands a thorough understanding of local subsurface conditions shaped by the southern San Joaquin Valley's alluvial geology. The city sits on deep sedimentary deposits, primarily composed of interbedded silts, clays, and sands washed down from the Sierra Nevada, which can amplify ground motion during a seismic event. Our work directly addresses the hazards outlined in local and statewide codes, including the California Building Code (CBC), which incorporates ASCE 7 for seismic design categories. A robust <a href="/investigation/">investigation</a> program is the essential first step to characterize these deposits, evaluating liquefaction susceptibility, dynamic settlement, and lateral spreading potential that are critical for protecting life and infrastructure in this seismically active region.</p>
+<p>We execute field programs strictly following USA standards, primarily deploying <a href="/cpt-test/">CPT (Cone Penetration Test)</a> methods alongside mud-rotary borings to gather continuous, high-resolution data. The CPT provides empirical measurements of tip resistance and sleeve friction, which we use to calculate the soil behavior type and cyclic resistance ratio without the sample disturbance common in traditional drilling. This data is integrated with <a href="/lab-in-situ/">in-situ testing</a> of shear wave velocity (Vs) via downhole methods, a critical parameter for site classification per the International Building Code. To ground-truth our continuous profiles, we pair these techniques with a meticulous <a href="/laboratory/">laboratory</a> program where undisturbed samples are tested for cyclic triaxial strength and index properties like <a href="/atterberg-limits/">Atterberg limits</a> and <a href="/grain-size/">grain size analysis</a>, ensuring our liquefaction trigger analyses are calibrated to site-specific fines content and plasticity.</p>
+<p>Typical projects in Visalia range from essential public safety facilities and large-scale agricultural processing plants to commercial tilt-up structures and deep <a href="/foundations/">foundations</a> for multi-story buildings. For a new cold storage distribution center on the city's expanding industrial fringe, we would analyze the potential for seismic-induced settlement of the shallow sands, often recommending ground improvement such as vibro-replacement or rammed aggregate piers to ensure post-event operability. Critical infrastructure projects, such as bridge replacements over the St. John’s River, require a detailed evaluation of abutment stability against lateral spreading. In these scenarios, our field program uses a <a href="/sand-cone-density/">field density test (sand cone method)</a> to verify the compacted structural fill, confirming it meets the strict relative compaction criteria necessary to minimize deformation under seismic loading.</p>
+<img src="/img/licuefaccion-1.webp" alt="Seismic in Visalia" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>The process moves from a targeted subsurface exploration to a comprehensive engineering analysis and a clear, actionable report. Our primary deliverable is a geotechnical seismic design memorandum containing site-specific ground motion parameters, final seismic site class, and quantified estimates of seismically induced settlement and liquefaction potential index (LPI). We translate complex time-history analyses into direct recommendations for foundation type, bearing depths, and earthwork specifications. The value lies in a rigorous, code-compliant defense of your project's seismic resilience—de-risking the structural design and providing the documented justification required for local permitting authorities, ensuring your Visalia structure meets the highest standard of safety without unnecessary construction costs.</p></div></section></main>
     </div>
 </div>
 

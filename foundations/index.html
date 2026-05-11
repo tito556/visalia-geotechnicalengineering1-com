@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -62,7 +67,7 @@ tr:nth-child(even) { background: #f8fafc; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    main { padding: 1.5rem; }
+    
 .cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
 
 footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
@@ -86,7 +91,7 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
     border-left: 2px solid transparent;
 }
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 .sidebar .home {
     display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
     font-size: .85rem; font-weight: 600;
@@ -96,10 +101,10 @@ header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: whit
 h1, h2, h3, h4 { font-family: var(--font-h); }
 .cta .contacto-line a { color: white; text-decoration: underline; }
 body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
-    .content-area { flex-direction: column; }
+    
 main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
 a { color: var(--primary); text-decoration: none; }
-    .container { padding: 1rem; }
+    
 th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
 :root {
     --primary: #171717;
@@ -129,7 +134,9 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
 details[open] summary::before { content: '− '; }
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 footer a { color: rgba(255,255,255,0.85); }
-.sidebar .cat-name:hover { color: #c9a961; }</style>
+.sidebar .cat-name:hover { color: #c9a961; }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"isPartOf":{"@type":"WebSite","url":"https://visalia.geotechnicalengineering1.com","@id":"https://visalia.geotechnicalengineering1.com/#website"},"url":"https://visalia.geotechnicalengineering1.com/foundations/","@type":"WebPage","name":"Foundations in Visalia – USA","@id":"https://visalia.geotechnicalengineering1.com/foundations/","inLanguage":"en","description":"Foundation design in Visalia must account for the San Joaquin Valley’s alluvial soils, where expansive clays and variable bearing capacity demand precise g"},{"@type":"BreadcrumbList","itemListElement":[{"name":"Home","@type":"ListItem","position":1,"item":"https://visalia.geotechnicalengineering1.com/"},{"name":"Foundations","@type":"ListItem","position":2,"item":"https://visalia.geotechnicalengineering1.com/foundations/"}]},{"@type":"ItemList","name":"Foundations","itemListElement":[{"name":"Pile foundation design","@type":"ListItem","position":1,"url":"https://visalia.geotechnicalengineering1.com/piles/"}]}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#374151"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -175,6 +182,8 @@ footer a { color: rgba(255,255,255,0.85); }
 
             <section>
                 <h2>Local geotechnical conditions in Visalia</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>At 331 feet above sea level, Visalia sits on the distal portion of the Kings River alluvial fan, where a 7.1-magnitude rupture on a previously unrecognized blind thrust would produce peak ground accelerations near 0.42g according to the USGS’s 2023 NSHM update. For a permanent tieback wall restraining 25 feet of cut, that level of shaking imposes a dynamic increment on the anchor load that many legacy designs in the Central Valley never considered. We run site-specific response spectra through PLAXIS 2D to quantify the seismic demand on each anchor level, and we specify unbonded lengths that extend well past the critical failure surface defined by the FHWA’s apparent earth pressure envelope. In Visalia’s layered profile, the highest risk is not anchor rupture but a progressive loss of lock-off load as the grout-ground interface degrades under cyclic shear, which is why we insist on lift-off testing at six-month intervals for critical retaining structures.</p>
             </section>
 
@@ -198,7 +207,14 @@ footer a { color: rgba(255,255,255,0.85); }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../piles/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Pile foundation design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/pilotes-5.webp" alt="Foundations in Visalia" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Foundation design in Visalia must account for the region’s alluvial geology, where near-surface soils typically consist of sandy loams, silts, and clays deposited by the Kaweah River system. The area’s proximity to the Sierra Nevada foothills introduces variable groundwater conditions and occasional lenses of compressible or expansive material that can compromise shallow footings if not properly characterized. Our practice addresses these challenges through a comprehensive <a href="/investigation/">geotechnical investigation</a> program that defines stratigraphy, strength parameters, and consolidation potential across the building footprint. For projects governed by the California Building Code (CBC) and local Visalia amendments, we integrate <a href="/cpt-test/">Cone Penetration Test (CPT)</a> data with conventional borings to map soft zones and evaluate liquefaction susceptibility per ASCE 7-22 criteria, delivering a ground model that directly informs foundation type selection and bearing depth.</p>
+<p>Our methodology follows ASTM and Caltrans standards to produce foundation recommendations that meet both CBC Chapter 18 and the requirements of the Visalia Building Division. Shallow foundation assessments rely on bearing capacity calculations derived from <a href="/lab-in-situ/">in-situ testing</a>—including standard penetration tests (SPT) and CPT tip resistance—combined with laboratory shear strength data obtained from undisturbed samples. Where site conditions indicate potential for excessive settlement or low-strength strata, we deploy <a href="/sand-cone-density/">field density testing using the sand cone method</a> per ASTM D1556 to verify compaction of engineered fill, and we evaluate expansive potential through <a href="/atterberg-limits/">Atterberg limits</a> testing in our <a href="/laboratory/">soil laboratory</a>. Deep foundation options, including driven piles and drilled shafts, are analyzed using FHWA design guidelines with axial capacity confirmed by in-situ load test data, ensuring performance under both static and seismic load combinations.</p>
+<p>Typical Visalia projects span single-family residential subdivisions on the city’s expanding east side, tilt-up commercial warehouses in the industrial park corridor, and institutional buildings for the Visalia Unified School District. Each typology presents distinct demands: lightweight structures over desiccated clays often require post-tensioned slabs or deepened footings to mitigate shrink-swell distress, while heavily loaded warehouse columns frequently necessitate ground improvement or deep foundations when <a href="/grain-size/">grain size analysis</a> from sieve and hydrometer tests confirms loose, poorly graded sands susceptible to settlement. Agricultural processing facilities in the surrounding Tulare County area add complexity with vibrating equipment and settlement-sensitive tanks, making rigorous subgrade characterization essential for long-term serviceability.</p>
+<img src="/img/cimentaciones-superficiales-1.webp" alt="Foundations in Visalia" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>A typical foundation investigation proceeds from site reconnaissance and utility clearance to a phased field program of borings or CPT soundings, followed by laboratory testing on representative samples. The resulting deliverables include a geotechnical report with factored bearing capacities, anticipated total and differential settlements, lateral earth pressures for retaining walls, and concrete slab-on-grade support parameters. Where applicable, we provide pavement design sections and corrosion potential assessments. The value delivered is a defensible, constructable foundation design that minimizes geotechnical risk, avoids overconservatism, and aligns with the Visalia permit review process—keeping your project on schedule and your structural investment protected against the site-specific hazards that define the southern San Joaquin Valley.</p></div></section></main>
     </div>
 </div>
 
